@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1,h2,p{
+    line-height: 1.5rem;
+}
+
+footer {
+    background-color: white;
+    flex-shrink: 0;
+    padding-right: 1rem;
+
+}
+
+footer ul{
+    list-style: none;
+    align-items: center;
+}
+
+footer a{
+    color: black;
+    text-decoration-line: none;
+}
+
+footer li{
+    display: inline-block;
+    margin: .5rem;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #373737;
+    color: white;
+    padding: 1rem;
+
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info{
+    padding: 1rem;
+    width: clamp(300px, 50%, 600px);
+}
+
+.badge-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-store-badge{
+    width: 200px;
+    margin: .5rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.instagram-logo{
+    vertical-align: middle;
+}
+
+.iphone-container{
+    position: relative;
+    width: 300px;
+    height: 600px;
+}
+
+.iphone {
+    position: absolute;
+
+}
+
+
+.iphone-frame{
+    z-index: 4;
+    width: 300px;
+}
+
+.screenshots{
+    z-index: 1;
+    width: 270px;
+    left: 15px;
+    top: 15px;
+    border-radius: 15px;
+}
+
+
+.hero{
+    display: flex;
+    background-color: #E57373;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+.hero-info{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    width: clamp(300px, 50%, 600px);
+}
+
+.hero-info h1, .hero-info h2{
+    margin: .5rem;
+}
+
+.icon{
+    background-color: #373737;
+    height: 300px;
+    width: 300px;
+    border-radius: 32px;
+}
+
+.icon img{
+    height: 300px;
+    width: 300px;
+}
+
+.hero-badge-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.legal-info{
+    margin: 0 25% 1rem 25%;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    html {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: .85rem;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .hero{
+        padding: 2rem;
+    }
+
+    .hero-info{
+        text-align: center;
+    }
+
+    .hero-badge-container{
+    justify-content: center;
+    }   
+
+    .legal-info{
+        margin: 1rem;
+    }
+
+}
