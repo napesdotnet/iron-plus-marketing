@@ -72,7 +72,6 @@ footer li{
 .badge-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .app-store-badge{
@@ -181,8 +180,12 @@ footer li{
         text-align: center;
     }
 
+    .badge-container{
+        justify-content: center;
+    }
+
     .hero-badge-container{
-    justify-content: center;
+        justify-content: center;
     }   
 
     .legal-info{
